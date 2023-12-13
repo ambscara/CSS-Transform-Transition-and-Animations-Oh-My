@@ -21,23 +21,68 @@
 nav {
   opacity: 0;
   transition-duration: 1s;
+  
 }
 
 .hamburger:hover ~ nav {
   opacity: 1;
 }
+/* div #top{
+  transform-origin: bottom left;
+  transition: 2s;
+  position: relative;
+  z-index: 5;
+  bottom: 5em;
+  right: -6.1em;
+} */
+  
+
+
+
+  
+  /* div #bottom{
+  transform-origin: top left;
+  transition: 2s;
+  position: relative;
+  z-index: 5;
+  top: 5em;
+  right: -6.1em; */
+
 
 @keyframes top {
-  from {}
-  to {}
+  from { 
+    transform: rotate(0deg);
+    
+  }
+  to {
+    transform: translateY(34px) rotate(45deg);
+
+  }
+    
 }
 
 @keyframes middle {
-  from {}
-  to {}
+  from {
+    opacity: 1;
+    
+  }
+  to {
+   opacity: 0;
+  }
 }
 
 @keyframes bottom {
-  from {}
-  to {}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: translateY(-34px) rotate(-45deg) ;
+  }
 }
+
+
+  
+  
+
+
+
